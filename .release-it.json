@@ -1,9 +1,14 @@
 {
   "git": {
-    "commitMessage": "chore: release v${version}"
+    "changelog": "git log --pretty=format:\"* %s (%h)\" ${from}...${to}",
+    "commit": true,
+    "commitMessage": "Release ${version}",
+    "tag": true,
+    "push": true
   },
   "github": {
-    "release": true
+    "release": true,
+    "autoGenerate": true
   },
   "npm": {
     "publish": false
