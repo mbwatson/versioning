@@ -11,6 +11,6 @@
   "hooks": {
     "before:init": ["echo run tests..."],
     "after:bump": "echo build image...",
-    "after:release": "echo Successful release of ${name} v${version} to ${respository}."
+    "after:release": "echo Successful v${version} release."
   }
 }
